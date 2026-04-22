@@ -1,9 +1,6 @@
 const { saveLog } = require('../utils/logger');
 
-/**
- * HistoryService — listens to WorkflowService events
- * and persists audit log entries for every transition.
- */
+
 class HistoryService {
     constructor(workflowService) {
         this.workflowService = workflowService;
